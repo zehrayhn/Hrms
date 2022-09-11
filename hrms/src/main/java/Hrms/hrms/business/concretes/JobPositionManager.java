@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import Hrms.hrms.business.abstracts.JobPositionService;
 import Hrms.hrms.core.utilities.results.DataResult;
@@ -33,10 +34,12 @@ public class JobPositionManager implements JobPositionService{
 				
 	}
 
+	
 	@Override
 	public Result add(JobPosition jobPosition) {
         this.jobPositionDao.save(jobPosition);
-		return new SuccessResult("ürün eklendi");
+		return new SuccessResult("iş pozisyonu eklendi");
+		
 	}
 
 }

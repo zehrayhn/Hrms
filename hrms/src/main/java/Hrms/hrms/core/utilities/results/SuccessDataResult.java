@@ -1,6 +1,6 @@
 package Hrms.hrms.core.utilities.results;
 
-import org.apache.logging.log4j.message.Message;
+//import org.apache.logging.log4j.message.Message;
 
 public class SuccessDataResult<T> extends DataResult<T> {
 
