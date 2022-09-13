@@ -34,7 +34,7 @@ public class JobPositionManager implements JobPositionService{
 				
 	}
 
-	
+	 
 	@Override
 	public Result add(JobPosition jobPosition) {
         this.jobPositionDao.save(jobPosition);

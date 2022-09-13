@@ -1,6 +1,7 @@
 package Hrms.hrms.entities.concretes;
 
-import java.sql.Date;
+
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -39,10 +40,10 @@ public class JobSeeker extends User{
 	private String identityNumber; 
 	
 	@Column(name="year_of_birth")
-	private Date dateOfBirth;
+	private LocalDate dateOfBirth;
 	
-	public JobSeeker( String fistName, String lastName, String nationalityId,
-			Date dateOfBirth) {
+	public JobSeeker( String fistName, String lastName, String identityNumber,
+			LocalDate dateOfBirth) {
 		super();
 		
 		this.fistName = fistName;
@@ -71,10 +72,10 @@ public class JobSeeker extends User{
 	public void setIdentityNumber(String identityNumber) {
 		this.identityNumber = identityNumber;
 	}
-	public Date getDateOfBirth() {
+	public LocalDate getDateOfBirth() {
 		return dateOfBirth;
 	}
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(LocalDate dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
